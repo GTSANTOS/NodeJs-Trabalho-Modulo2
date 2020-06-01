@@ -103,13 +103,14 @@ const Exer6_CidadeNomeMenorCadaEstado  = () => {
 
 
 
+//Criar um método que imprima no console a cidade de maior nome entre todos os estados, seguido do seu UF. Em caso de empate, considerar a ordem alfabética para ordená-los e então retornar o primeiro.
 const Exer7_CidadeNomeMaiorEntreTodosEstados  = () => {
     var cidadesJson = JSON.parse(fs.readFileSync("../json/Cidades.json", "utf8"));
     var estadosJson = JSON.parse(fs.readFileSync("../json/Estados.json", "utf8"));
     if (cidadesJson) {
            
         cidadesJson.sort(function (a, b) {
-            return b.Nome.length - a.Nome.length || // sort by length, if equal then
+            return b.Nome.length - a.Nome.length || 
                 a.Nome.localeCompare(b.Nome);
         });
 
@@ -126,14 +127,14 @@ const Exer7_CidadeNomeMaiorEntreTodosEstados  = () => {
 }
 
 
-
+// Criar um método que imprima no console a cidade de menor nome entre todos os estados, seguido do seu UF. Em caso de empate, considerar a ordem alfabética para ordená-los e então retornar o primeiro.
 const Exer8_CidadeNomeMenorEntreTodosEstados  = () => {
     var cidadesJson = JSON.parse(fs.readFileSync("../json/Cidades.json", "utf8"));
     var estadosJson = JSON.parse(fs.readFileSync("../json/Estados.json", "utf8"));
     if (cidadesJson) {
           
         cidadesJson.sort(function (a, b) {
-            return a.Nome.length - b.Nome.length || // sort by length, if equal then
+            return a.Nome.length - b.Nome.length || 
                 a.Nome.localeCompare(b.Nome);
         });
 
