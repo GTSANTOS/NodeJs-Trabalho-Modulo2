@@ -102,8 +102,8 @@ async function RetornarQuantidadeCidadesPorEstado(estado) {
 
 
 //Exercicio 4 e 4
-//Exercicio 3 - Parametro maior = true -  Criar um método que imprima no console um array com o UF dos cinco estados que mais possuem cidades, seguidos da quantidade, em ordem decrescente. Utilize o método criado no tópico anterior. Exemplo de impressão: [“UF - 93”, “UF - 82”, “UF - 74”, “UF - 72”, “UF - 65”]
-//Exercicio 4 - Parametro maior = false - //Criar um método que imprima no console um array com o UF dos cinco estados que menos possuem cidades, seguidos da quantidade, em ordem decrescente. Utilize o método criado no tópico anterior. Exemplo de impressão: [“UF - 30”, “UF - 27”, “UF - 25”, “UF - 23”, “UF - 21”]
+//Exercicio 3 - qtde positiva, mostra cidades maiores - Criar um método que imprima no console um array com o UF dos cinco estados que mais possuem cidades, seguidos da quantidade, em ordem decrescente. Utilize o método criado no tópico anterior. Exemplo de impressão: [“UF - 93”, “UF - 82”, “UF - 74”, “UF - 72”, “UF - 65”]
+//Exercicio 4 - qtde negativo, mostra cidades menores - Criar um método que imprima no console um array com o UF dos cinco estados que menos possuem cidades, seguidos da quantidade, em ordem decrescente. Utilize o método criado no tópico anterior. Exemplo de impressão: [“UF - 30”, “UF - 27”, “UF - 25”, “UF - 23”, “UF - 21”]
 async function RetornarEstadosComMaisCidadesOuMenosCidades(qtde) {
     //Retorna as  x qtdes das primeiras cidades
     try {
